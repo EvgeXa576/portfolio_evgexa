@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:ital, wght@0,10050,20050,300:0,40050,500:0,600;0,70050,800:0,90051,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1, 900&display-swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root{
+    --white: #fff;
+    --aqua: #12f7ff;
+    --violet: #1d002c;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--violet);
+    color: var(--white);
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    padding: 25px 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__logo{
+    font-size: 2em;
+    color: var(--aqua);
+    font-weight: 600;
+
+}
+
+.header_menu{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.header_menu a{
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 12px;
+    border: 2px solid var(--aqua);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.header_menu a:hover{
+    box-shadow: 0 0 1rem var(--aqua);
+    background: var(--aqua);
+    color: var(--violet);
+}
+
+section{
+    min-height: 100vh;
+}
+
+.parallax__home{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    width: 100%;
+}
+
+.parallax__home img{
+    position: absolute;
+    object-fit: cover;
+    pointer-events: none;
+
+}
+
+#text{
+    position: absolute;
+    font-size: 2.5rem;
+    text-shadow: 0 10px 4px rgba(0, 0, 0, 0.85);
+    top: 80%;
+    left: 3%;
+}
+
+#moon, #desert-moon{
+    mix-blend-mode: screen;
+}
+
+.about{
+    position: relative;
+}
+
+.info-box{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 50%;
+    z-index: 1003;
+    background: var(--violet);
+}
+
+.info-box h2{
+    font-size: 2.3rem;
+}
+
+.info-box p{
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.btn{
+    background: var(--aqua);
+    color: var(--violet);
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--aqua);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.btn:hover{
+    box-shadow: 0 0 1rem var(--aqua);
+    background: var(--violet);
+    color: var(--aqua);
+}
+
+.about img{
+    position: absolute;
+    z-index: 1000;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.waterfall{
+    position: absolute;
+    top: -95px;
+}
+
+.product{
+    background: #1d002c;
+    padding: 3rem 10%;
+}
+
+.product h2{
+    font-size: 2rem;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    margin: 6rem 0;
+}
+
+.product__cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.cart{
+    padding: 1rem 2rem 2rem 2rem;
+    border: 2px solid var(--aqua);
+    text-align: center;
+    border-radius: 25px;
+    display: block;
+    z-index: 999;
+    transition: all 0.4s ease;
+}
+
+.cart:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 0 1rem var(--aqua);
+}
+
+.cart img{
+    width: 150px;
+    height: 150px;
+    margin-top: -5rem;
+    filter: drop-shadow(0 0 0.5rem #1797ff);
+
+}
+
+.price-name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.price-name span{
+    color: var(--aqua);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.cart, .btn{
+    margin-top: 2rem;
+    width: 70%;
+}
+
+.contacts{
+    border-top: 2px solid var(--aqua);
+    background: #1d002c;
+}
+
+.contacts h2{
+    font-size: 2rem;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+    margin: 6rem 0;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+iframe{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.cont{ 
+    padding: 2%;
+}
+
+.cont-flex{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-direction: row;
+}
+
+.cont p{
+    margin-bottom: 1rem;
+}
+
+.cont a{
+    width: 20%;
+    margin: 0 auto;   
+    text-align: center;
+    margin-top: 2rem;
+    display: block;
+}
