@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f2cc8d7f38.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     <div class="container">
+        <h1 class="title">Составить резюме онлайн за 10 минут</h1>
+        <p>Начните составлять резюме онлайн, введя информацию в форму для ввода данных. Пользуйтесь подсказками, чтобы правильно заполнить шаблон и скачать получившийся бланк в нужном формате. По завершению можно отправить резюме.</p>
+      
+        <form class="form">
+            <h4 class="block-title">ФИО</h4>
+            
+            <div class="form__block">
+                <p class="form__block-info"><i class="fa-solid fa-circle-info"></i>Добавьте фотографию к резюме, она значительно увеличит привлекательность вашего бланка </p>
+                <div class="form__block-item">
+                    <label for="fio">Фамилия</label>
+                    <input id="fio" type="text" maxlength="25" placeholder="Иванов" required>
+                </div>
+                <div class="form__block-item"> 
+                    <label for="name">Имя</label>
+                    <input id="name" type="text" maxlength="25" placeholder="Иван" required>
+                </div>
+                <div class="form__block-item"> 
+                    <label for="first-name">Отчество</label>
+                    <input id="first-name" type="text" maxlength="25" placeholder="Отчество">
+                </div>
+                <div class="form__block-item"> 
+                    <label for="photo">Фото</label>
+                    <input id="photo" type="file" accept="image/jpeg,image/png">
+                </div>
+            </div>
+
+            <h4 class="block-title">Данные о вакансии</h4>
+            <div class="form__block">
+                <p class="form__block-info"><i class="fa-solid fa-circle-info"></i>Добавьте информацию о должности, зарплате, укажите занятость и график работы.</p>
+                <div class="form__block-item">
+                    <label for="job">Какую должность вы хотите занимать?</label>
+                    <input id="job" type="text" maxlength="25" placeholder="Администратор" required>
+                </div>
+                <div class="form__block-item">
+                    <label for="salary">Желаемая зарплата (руб.)</label>
+                    <select name="salary" id="salary">
+                        <option value="1">20000-40000</option>
+                        <option value="2">40000-60000</option>
+                        <option value="3">60000-80000</option>
+                        <option value="4">80000-100000</option>
+                        <option value="5">100000-120000</option>
+                        <option value="6">120000-140000</option>
+                    </select>
+                </div>
+                <div class="form__block-item">
+                    <label for="salary">Тип занятости (выберете удерживая ctrl)</label>
+                    <select name="salary" id="salary" multiple>
+                        <option value="11">Полная</option>
+                        <option value="12">Частичная</option>
+                        <option value="13">Удаленная работа</option>
+                        <option value="14">Стажировка</option>
+                    </select>
+                </div>
+                <div class="form__block-item">
+                    <label for="salary">График работы</label>
+                    <select name="salary" id="salary" multiple>
+                        <option value="21">Полный день</option>
+                        <option value="22">Неполный день</option>
+                        <option value="23">Гибкий график</option>
+                        <option value="24">Ненормированный</option>
+                     </select>
+                </div>
+            </div>
+            
+            <h4 class="block-title">Контактная информация</h4>
+            <div class="form__block">
+                <p class="form__block-info"><i class="fa-solid fa-circle-info"></i>Обязательно добавьте номер телефона и укажите электронную почту, так работодателю будет легче с Вами связаться. Укажите приоритетные способы связи.</p> 
+                <div class="form__block-item">
+                    <label for="tel">Телефон для связи</label>
+                    <input 
+                    id="tel" 
+                    type="tel"
+                    placeholder="89999999999"
+                    minlength="11"
+                    maxlength="11"
+                    >
+                </div>
+                <div class="form__block-item">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" placeholder="mail@mail.ru">
+                </div>
+                <div class="form__block-item full">
+                    <label>Допустимые способы связи</label>
+                    <div class="row">
+                        <div class="row-item">
+                             <input type="checkbox" checked>
+                            
+                            <label class="call">Whatsapp</label>
+                        </div>
+                        <div class="row-item">
+                            <input type="checkbox">
+                          
+                            <span class="call">Viber</span>
+                        </div>
+                        <div class="row-item">
+                            <input type="checkbox">
+                          
+                            <span class="call"> Telegram</span>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="block-title">Личная информация</h4>
+            <div class="form__block">
+                <p class="form__block-info"><i class="fa-solid fa-circle-info"></i>Укажите город проживания, дату рождения, пол, семейное положение и выберите уровень образования из списка.</p> 
+               <div class="form__block-item">
+                    <label for="dob">Дата рождения</label>
+                    <input type="date" id="dob">
+                </div> 
+                <div class="form__block-item">
+                    <label for="city">Город проживания</label>
+                    <input type="text" id="city" placeholder="Екатеринбург">
+                </div>
+                <div class="form__block-item">
+                    <div class="row">
+                        <p>Пол</p>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">мужской</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">женский</label>    
+                    </div>
+                </div>
+                <div class="form__block-item">
+                    <label for="education">Образование</label>
+                    <select name="education" id="education">
+                        <option value="21">9 кл</option>
+                        <option value="22">11 кл</option>
+                        <option value="23">ПТУ</option>
+                        <option value="24">СПО</option>
+                        <option value="24">ВПО</option>
+                    </select>
+                </div>
+                <div class="form__block-item full">
+                    <div class="row">
+                        <p>Семейное положение</p>
+                        <label for="male-single"></label><input type="radio" id="male-single" name="family-status" value="male-single">
+                        холост</label>
+                        <input type="radio" id="male-married" name="family-status" value="male-married">
+                        <label for="male-married">женат</label>   
+                        <input type="radio" id="female-single" name="family-status" value="female-single">
+                        <label for="female-married">не замужем</label>
+                        <input type="radio" id="female-married" name="family-status" value="female-married">
+                        <label for="female-married">замужем</label> 
+                    </div>
+                </div>
+                
+            </div>
+            <h4 class="block-title">Опыт работы</h4>
+            <div class="form__block">
+                <p class="form__block-info"><i class="fa-solid fa-circle-info"></i>Укажите свой предыдущий опыт работы, чтобы работодатель смог быстрее принять решение </p>
+                <div class="form__block-item">
+                    <label for="experience">Стаж на предыдущей работе (лет)</label>
+                    <input id="experience" type="number" min="0" max="50" value="1">
+                </div>
+                <div class="form__block-item">
+                    <label for="work">Работаете ли вы в настоящее время</label>
+                    <select name="work" id="work">
+                        <option value="yes">да</option>
+                        <option value="no">нет</option>
+                    </select>
+                </div>
+                <div class="form__block-item full">
+                    <label for="company">Название организации где работаете/работали</label>
+                    <input id="company" type="text" placeholder="ООО Газпром">
+                </div>
+                <div class="form__block-item full">
+                    <label for="function">Обязанности и достижения</label>
+                    <textarea name="function" id="function" cols="30" rows="10" placeholder="Коммуникация с банками по рабочим вопросам. Оформление, проведение и контроль за исполнением платежных поручений. Проведение операций по списанию денежных средств со счетов на основе подтверждающих документов."></textarea>
+                </div>
+            </div>
+            <div class="form__btn">
+                <button type="submit" class="btn">Сохранить и отправить</button>
+            </div>
+
+               
+        </form>
+         
+    </div>
+    
+    
+</body>
+</html>
