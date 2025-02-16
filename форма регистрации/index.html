@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы регистрации и авторизации</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/06d986b207.js" crossorigin="anonymous"> </script>
+</head>
+<body>
+    <div class="container">
+        <input type="checkbox" id="toggle">
+        <div class="signin">
+            <h1>Авторизация</h1>
+            <form>
+                <p>Войдите с помощью соцсети</p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>или введите данные</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Пароль">
+                <input type="submit" placeholder="Войти">
+                <small>Нет аккаунта? <label for="toggle" class="sing-up">Регистрация</label></small>
+            </form>
+        </div>
+        <div class="signup">
+            <h1>Создать аккаунт</h1>
+            <form>
+                <div class="social">
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>или введите свои данные</p>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Пароль">
+                <input type="submit" placeholder="Войти">
+                <small>Уже есть аккаунт? <label for="toggle" class="sing-in">Войти</label></small>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
