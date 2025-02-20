@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumi Sky - фотостудия. Фотоссесии в Екатеринбурге</title>
+  <link rel="shortcut icon" href="img/index/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://kit.fontawesome.com/06d986b207.js" crossorigin="anonymous"></script>
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- шапка -->
+  <header class="header">
+    <div class="header__logo">
+      <a href="index.html" class="logo-link">
+        <img src="img/index/logo.svg" alt="logo" class="logo-image">
+      </a>
+    </div>
+    <div class="header__adress">
+      <span class="adress-text">Екатеринбург, пр. Ленина 49</span>
+    </div>
+    <div class="header__call">
+      <span class="call-text">Связаться</span>
+      <a href="tel:89024097006" class="call-icon">
+        <img src="img/index/gold-phone.svg" alt="tel">
+      </a>
+    </div>
+  </header>
+
+  <!-- меню -->
+  <nav class="nav">
+    <ul class="menu">
+      <li class="menu__item">
+        <a class="menu-link" href="index.html">Главная</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu-link" href="index.html#services">Услуги</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu-link" href="halls.html">Залы</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu-link active" href="portfolio.html">Портфолио</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu-link" href="contacts.html">Контакты</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu-link btn" href="booking.html">Бронировать</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Основной контент -->
+  <main>
+    <section class="photo">
+     <h2 class="section-title">Портфолио</h2>
+      <div class="photo__filter">
+        <input class="filter__radio" type="radio" id="all" name="categories" value="all" checked>
+        <input class="filter__radio" type="radio" id="family" name="categories" value="family">
+        <input class="filter__radio" type="radio" id="frends" name="categories" value="frends">
+        <input class="filter__radio" type="radio" id="love" name="categories" value="love">
+        <input class="filter__radio" type="radio" id="pers" name="categories" value="pers">
+        <input class="filter__radio" type="radio" id="baby" name="categories" value="baby">
+        <input class="filter__radio" type="radio" id="pet" name="categories" value="pet">
+        <ol class="filter__controls">
+          <li><label class="controls-label" for="all">Все фотографии</label></li>
+          <li><label class="controls-label" for="family">Семейные</label></li>
+          <li><label class="controls-label" for="frends">Друзья</label></li>
+          <li><label class="controls-label" for="love">Love Story</label></li>
+          <li><label class="controls-label" for="pers">Персональные</label></li>
+          <li><label class="controls-label" for="baby">В ожидании чуда</label></li>
+          <li><label class="controls-label" for="pet">С питомцами</label></li>
+        </ol>
+        <ol class="filter__photo">
+          <li class="photo-item" data-category="family">
+            <img class="photo-img" src="img/portfolio/fam1.jpg" alt="family">
+          </li>
+           <li class="photo-item" data-category="frends">
+            <img class="photo-img" src="img/portfolio/frend2.jpeg" alt="frends">
+          </li>
+          <li class="photo-item" data-category="family">
+            <img class="photo-img" src="img/portfolio/fam2.JPG" alt="family">
+          </li>
+          <li class="photo-item" data-category="family">
+            <img class="photo-img" src="img/portfolio/fam3.JPG" alt="family">
+          </li>
+          <li class="photo-item" data-category="frends">
+            <img class="photo-img" src="img/portfolio/frend1.jpeg" alt="frends">
+          </li>
+         
+          <li class="photo-item" data-category="frends">
+            <img class="photo-img" src="img/portfolio/frend3.jpg" alt="frends">
+          </li>
+          <li class="photo-item" data-category="love">
+            <img class="photo-img" src="img/portfolio/love1.jpg" alt="love">
+          </li>
+          <li class="photo-item" data-category="love">
+            <img class="photo-img" src="img/portfolio/love2.jpeg" alt="love">
+          </li>
+          <li class="photo-item" data-category="pers">
+            <img class="photo-img" src="img/portfolio/pers3.JPG" alt="pers">
+          </li>
+          <li class="photo-item" data-category="love">
+            <img class="photo-img" src="img/portfolio/love3.jpg" alt="love">
+          </li>
+          <li class="photo-item" data-category="pers">
+            <img class="photo-img" src="img/portfolio/pers1.jpg" alt="pers">
+          </li>
+          <li class="photo-item" data-category="pers">
+            <img class="photo-img" src="img/portfolio/pers2.jpg" alt="pers">
+          </li>
+          <li class="photo-item" data-category="pet">
+            <img class="photo-img" src="img/portfolio/pet5.jpg" alt="pet">
+          </li>
+            <li class="photo-item" data-category="baby">
+            <img class="photo-img" src="img/portfolio/preg3.jpg" alt="baby">
+          </li>
+          
+          <li class="photo-item" data-category="pet">
+            <img class="photo-img" src="img/portfolio/pet4.jpg" alt="pet">
+          </li>
+          <li class="photo-item" data-category="baby">
+            <img class="photo-img" src="img/portfolio/preg2.jpg" alt="baby">
+          </li>
+        
+          <li class="photo-item" data-category="pet">
+            <img class="photo-img" src="img/portfolio/pet1.jpeg" alt="frends">
+          </li>
+          <li class="photo-item" data-category="pet">
+            <img class="photo-img" src="img/portfolio/pet2.jpeg" alt="pet">
+          </li>
+          <li class="photo-item" data-category="pet">
+            <img class="photo-img" src="img/portfolio/pet3.jpg" alt="pet">
+          </li>
+         <li class="photo-item" data-category="baby">
+            <img class="photo-img" src="img/portfolio/preg1.jpeg" alt="baby">
+          </li> 
+         
+        </ol>
+      </div>
+
+      <h2 class="section-subtitle">Студии для фотосъемок</h2>
+      <div class="studio_slider">
+        <div class="studio_slide">
+          <input type="radio" name="breaker" id="switch1" checked>
+          <input type="radio" name="breaker" id="switch2">
+          <input type="radio" name="breaker" id="switch3">
+          <input type="radio" name="breaker" id="switch4">
+          <div class="slide_img actual"><img src="img/halls/fusion1.jpg" alt="Фотостудия"></div>
+          <div class="slide_img"><img src="img/halls/lof1.jpg" alt="Фотостудия"></div>
+          <div class="slide_img"><img src="img/halls/milan1.jpg" alt="Фотостудия"></div>
+          <div class="slide_img"><img src="img/halls/fusion3.jpg" alt="Фотостудия"></div>
+          <div class="controls">
+            <label for="switch1" class="bar"></label>
+            <label for="switch2" class="bar"></label>
+            <label for="switch3" class="bar"></label>
+            <label for="switch4" class="bar"></label>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <!-- футер -->
+  <footer class="footer">
+    <div class="footer__logo">
+      <img src="img/index/f-logo.png" alt="логотип">
+    </div>
+    <div class="footer__link">
+      <ul class="footer__link-list">
+        <li class="list-item"><a class="list-link" href="portfolio.html">Портфолио</a></li>
+        <li class="list-item"><a class="list-link" href="halls.html">Наши залы</a></li>
+        <li class="list-item"><a class="list-link" href="booking.html">Бронирование</a></li>
+      </ul>
+    </div>
+    <div class="footer__social">
+      <p>Мы в соцсетях:</p>
+      <div class="social__icon">
+        <a href="#" class="social__icon-link"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social__icon-link"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social__icon-link"> <i class="fa-brands fa-vk"></i></a>
+        <a href="#" class="social__icon-link"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="footer__contact">
+      <ul class="contact__list">
+        <li class="contact__list-item"><i class="fa-solid fa-location-pin"></i>Екатеринбург, пр. Ленина, 49</li>
+        <li class="contact__list-item"><i class="fa-solid fa-clock"></i>9:00 - 24:00 ежедневно</li>
+        <li class="contact__list-item"><i class="fa-solid fa-phone-flip"></i>Залы: 8-902-409-70-06</li>
+        <li class="contact__list-item"><i class="fa-solid fa-mobile-screen-button"></i>Фотосессии:
+          8-922-157-32-52</li>
+      </ul>
+    </div>
+    <button onclick="topFunction()" id="mybtn" title="Вверх"><img src="img/index/up.png"></button>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script> 
+</body>
+
+</html>
