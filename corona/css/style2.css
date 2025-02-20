@@ -1,0 +1,288 @@
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --dark-coral: #EC5863;
+    --dark-lilac:#4285f4;
+    --coral: #f37a82;
+    --lilac:#70a3f7;
+    --bg: #fafbfd;
+    --box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+    --fz: 1rem;
+    --width-full: 100%;
+    --line-spacing: 1.4;
+  
+  }
+
+
+
+body {
+	font-family: 'Rubik', sans-serif;
+	font-size: var(--fz);
+	font-weight: 400;
+	color: #616161;
+}
+
+.map{
+    background-color: var(--bg);
+}
+
+.map__container{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.map__title{
+    font-family: Raleway;
+    font-size: 44px;
+    color: var(--black);
+    margin-bottom: 40px;
+}
+
+.map__inner{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+}
+
+.about__title{
+    font-family: Raleway;
+    font-size: 24px;
+    color: var(--black);
+}
+
+.about__text{
+    margin: 0.5rem 0;
+}
+
+
+@media (max-width: 992px) {
+    .map__inner{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .map__title{
+        text-align: center;
+    }
+}
+
+
+
+
+/* form section */
+
+
+
+
+
+
+.form__container{
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.form__c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form__image{
+    display: inline-block;
+    /* flex: 0 1 90%; */
+}
+
+.form__label{
+    margin-bottom: 10px;
+}
+
+.form__image img{
+    display: inline-block;
+    max-width: 100%;
+}
+
+.form__inner{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 100px;
+}
+
+.input__cont{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    
+}
+.form__input{
+    height: 3rem;
+    border: 2px solid var(--coral);
+    outline: none;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+.full{
+    width: 100%;
+}
+
+.form-b{
+    padding: 14px 60px;
+    display: block;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.form__cont{
+    background-color: var(--white);
+    box-shadow: 0px 4px 18px 0px rgba(88, 126, 236, 0.18);
+    padding: 50px 30px;
+    border-radius: 8px;
+}
+
+.form__box-inner{
+    position: relative;
+}
+
+.form__cont{
+    position: relative;
+    z-index: 2;
+}
+
+.decor4{
+	width: 147px;
+	height: 147px;
+	top: -40px;
+	left: -40px;
+
+}
+
+.decor5{
+	width: 77px;
+	height: 77px;
+	bottom: -30px;
+	left: -30px;
+}
+
+.decor6{
+	width: 77px;
+	height: 77px;
+	right: -30px;
+	bottom: 100px;
+}
+
+@media (max-width: 992px) {
+    .form__inner{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .form__inner{
+        margin-top: 0;
+    }
+}
+
+
+/* faq section */  
+
+
+
+
+
+.faq{
+    background-color: var(--bg);
+    padding-bottom: 100px;
+}
+
+.faq__container{
+    padding-top: 50px;
+}
+
+.faq__label{
+    
+    /* max-width: 600px; */
+    /* width: 600px; */
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 16px;
+}
+
+.faq__input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.faq__input:last-child{
+    margin-bottom: 0;
+}
+
+.faq__heading{
+    border-radius: 10px 10px 0 0 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    color: var(--white);
+    /* width: 70%; */
+    background-color: var(--dark-coral);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.faq__heading i{
+    transition: all 0.3s;
+}
+
+.faq__answer {
+    /* width: 70%; */
+    max-height: 0;
+    padding: 0 16px;
+    background: var(--coral);
+    transition: all 0.3s;
+    border-radius: 0 0 10px 10px;
+}
+.faq__answer p{
+    margin: 0;
+    color: var(--white);
+    font-size: 18px;
+}
+
+input:checked ~ .faq__heading i{
+    transform: rotate(90deg);
+}
+
+input:checked ~ .faq__answer {
+    max-height: 100vh;
+    padding: 16px;
+}
+
+.faq__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq__faq{
+    flex: 0 1 45%;
+}
+
+.faq__img img{
+    max-width: 100%;
+}
+
+.faq__img{
+    flex: 0 1 45%;
+}
+
+@media (max-width: 992px) {
+    .faq__inner{
+        flex-direction: column;
+    }
+    .faq__faq{
+        width: 100%;
+    }
+}
